@@ -1,0 +1,571 @@
+C:\Users\PhantomPowerToo\Desktop>python neststeps.py
+
+==== Processing converted_output.tbt (size 65 bytes) ====
+Found 1 possible zlib header(s) at offsets: [0]
+Success decompressing at offset 0: length 112 bytes
+0000  CD 01 00 60 00 00 60 00 CD 01 00 60 60 00 00 00   ...`..`....``...
+0010  CD 01 00 60 60 00 60 00 CD 01 00 60 C0 00 00 00   ...``.`....`....
+0020  CD 01 00 60 C0 00 60 00 CD 01 00 60 20 01 00 00   ...`..`....` ...
+0030  D0 01 00 60 20 01 60 00 D2 01 00 60 80 01 60 00   ...` .`....`..`.
+0040  D2 01 00 60 E0 01 00 00 D5 01 00 60 E0 01 60 00   ...`.......`..`.
+0050  D5 01 00 60 A0 02 00 00 D2 01 00 60 A0 02 60 00   ...`.......`..`.
+0060  D2 01 00 60 00 03 00 00 D0 01 00 60 00 03 00 00   ...`.......`....
+
+Explicit decompress at offset 64 failed: Error -5 while decompressing data: incomplete or truncated stream
+
+==== Processing converted_output_full.tbt (size 146 bytes) ====
+Found 2 possible zlib header(s) at offsets: [4, 16]
+Failed decompress at offset 4: Error -3 while decompressing data: invalid distance too far back
+Success decompressing at offset 16: length 112 bytes
+0000  CD 01 00 60 00 00 60 00 CD 01 00 60 60 00 00 00   ...`..`....``...
+0010  CD 01 00 60 60 00 60 00 CD 01 00 60 C0 00 00 00   ...``.`....`....
+0020  CD 01 00 60 C0 00 60 00 CD 01 00 60 20 01 00 00   ...`..`....` ...
+0030  D0 01 00 60 20 01 60 00 D2 01 00 60 80 01 60 00   ...` .`....`..`.
+0040  D2 01 00 60 E0 01 00 00 D5 01 00 60 E0 01 60 00   ...`.......`..`.
+0050  D5 01 00 60 A0 02 00 00 D2 01 00 60 A0 02 60 00   ...`.......`..`.
+0060  D2 01 00 60 00 03 00 00 D0 01 00 60 00 03 00 00   ...`.......`....
+
+Explicit decompress at offset 64 failed: Error -3 while decompressing data: incorrect header check
+Explicit decompress at offset 85 failed: Error -3 while decompressing data: incorrect header check
+
+==== Processing example.tbt (size 56 bytes) ====
+Found 1 possible zlib header(s) at offsets: [4]
+Failed decompress at offset 4: Error -3 while decompressing data: invalid distance too far back
+
+==== Processing filea.tbt (size 107 bytes) ====
+Found 3 possible zlib header(s) at offsets: [4, 64, 85]
+Failed decompress at offset 4: Error -3 while decompressing data: invalid distance too far back
+Success decompressing at offset 64: length 33 bytes
+0000  06 1B 1C 60 00 00 00 00 40 18 00 FF 00 00 00 00   ...`....@.......
+0010  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ................
+0020  00                                                .
+
+Success decompressing at offset 85: length 14 bytes
+0000  02 00 0F 00 01 01 03 00 01 80 00 3F 01 00         ...........?..
+
+Explicit decompress at offset 64 succeeded, length 33
+0000  06 1B 1C 60 00 00 00 00 40 18 00 FF 00 00 00 00   ...`....@.......
+0010  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ................
+0020  00                                                .
+33-byte payload analysis:
+Raw bytes: 061b1c6000000000401800ff000000000000000000000000000000000000000000
+Zero bytes count: 26 out of 33
+
+Explicit decompress at offset 85 succeeded, length 14
+0000  02 00 0F 00 01 01 03 00 01 80 00 3F 01 00         ...........?..
+
+==== Processing fileb.tbt (size 107 bytes) ====
+Found 3 possible zlib header(s) at offsets: [4, 64, 85]
+Failed decompress at offset 4: Error -3 while decompressing data: invalid distance too far back
+Success decompressing at offset 64: length 33 bytes
+0000  06 1B 1C 60 00 00 00 00 40 18 00 FF 00 00 00 00   ...`....@.......
+0010  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ................
+0020  00                                                .
+
+Success decompressing at offset 85: length 14 bytes
+0000  02 00 0F 00 01 01 03 00 01 83 00 3F 01 00         ...........?..
+
+Explicit decompress at offset 64 succeeded, length 33
+0000  06 1B 1C 60 00 00 00 00 40 18 00 FF 00 00 00 00   ...`....@.......
+0010  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ................
+0020  00                                                .
+33-byte payload analysis:
+Raw bytes: 061b1c6000000000401800ff000000000000000000000000000000000000000000
+Zero bytes count: 26 out of 33
+
+Explicit decompress at offset 85 succeeded, length 14
+0000  02 00 0F 00 01 01 03 00 01 83 00 3F 01 00         ...........?..
+
+==== Processing filec.tbt (size 109 bytes) ====
+Found 3 possible zlib header(s) at offsets: [4, 64, 85]
+Failed decompress at offset 4: Error -3 while decompressing data: invalid distance too far back
+Success decompressing at offset 64: length 33 bytes
+0000  06 1B 1C 60 00 00 00 00 40 18 00 FF 00 00 00 00   ...`....@.......
+0010  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ................
+0020  00                                                .
+
+Success decompressing at offset 85: length 16 bytes
+0000  02 00 0F 00 01 01 04 00 01 83 A0 00 01 85 9E 00   ................
+
+Explicit decompress at offset 64 succeeded, length 33
+0000  06 1B 1C 60 00 00 00 00 40 18 00 FF 00 00 00 00   ...`....@.......
+0010  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ................
+0020  00                                                .
+33-byte payload analysis:
+Raw bytes: 061b1c6000000000401800ff000000000000000000000000000000000000000000
+Zero bytes count: 26 out of 33
+
+Explicit decompress at offset 85 succeeded, length 16
+0000  02 00 0F 00 01 01 04 00 01 83 A0 00 01 85 9E 00   ................
+
+==== Processing filed.tbt (size 109 bytes) ====
+Found 3 possible zlib header(s) at offsets: [4, 64, 85]
+Failed decompress at offset 4: Error -3 while decompressing data: invalid distance too far back
+Success decompressing at offset 64: length 33 bytes
+0000  06 1B 1C 60 00 00 00 00 40 18 00 FF 00 00 00 00   ...`....@.......
+0010  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ................
+0020  00                                                .
+
+Success decompressing at offset 85: length 16 bytes
+0000  02 00 0F 00 01 01 04 00 01 83 50 00 01 85 EE 00   ..........P.....
+
+Explicit decompress at offset 64 succeeded, length 33
+0000  06 1B 1C 60 00 00 00 00 40 18 00 FF 00 00 00 00   ...`....@.......
+0010  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ................
+0020  00                                                .
+33-byte payload analysis:
+Raw bytes: 061b1c6000000000401800ff000000000000000000000000000000000000000000
+Zero bytes count: 26 out of 33
+
+Explicit decompress at offset 85 succeeded, length 16
+0000  02 00 0F 00 01 01 04 00 01 83 50 00 01 85 EE 00   ..........P.....
+
+==== Processing filee.tbt (size 107 bytes) ====
+Found 3 possible zlib header(s) at offsets: [4, 64, 85]
+Failed decompress at offset 4: Error -3 while decompressing data: invalid distance too far back
+Success decompressing at offset 64: length 33 bytes
+0000  06 1B 1C 60 00 00 00 00 40 18 00 FF 00 00 00 00   ...`....@.......
+0010  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ................
+0020  00                                                .
+
+Success decompressing at offset 85: length 14 bytes
+0000  02 00 0F 00 01 01 03 00 01 83 00 3F 01 00         ...........?..
+
+Explicit decompress at offset 64 succeeded, length 33
+0000  06 1B 1C 60 00 00 00 00 40 18 00 FF 00 00 00 00   ...`....@.......
+0010  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ................
+0020  00                                                .
+33-byte payload analysis:
+Raw bytes: 061b1c6000000000401800ff000000000000000000000000000000000000000000
+Zero bytes count: 26 out of 33
+
+Explicit decompress at offset 85 succeeded, length 14
+0000  02 00 0F 00 01 01 03 00 01 83 00 3F 01 00         ...........?..
+
+==== Processing filef.tbt (size 109 bytes) ====
+Found 3 possible zlib header(s) at offsets: [4, 64, 85]
+Failed decompress at offset 4: Error -3 while decompressing data: invalid distance too far back
+Success decompressing at offset 64: length 33 bytes
+0000  06 1B 1C 60 00 00 00 00 40 18 00 FF 00 00 00 00   ...`....@.......
+0010  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ................
+0020  00                                                .
+
+Success decompressing at offset 85: length 16 bytes
+0000  02 00 0F 00 01 01 04 00 01 83 9F 00 01 12 9F 00   ................
+
+Explicit decompress at offset 64 succeeded, length 33
+0000  06 1B 1C 60 00 00 00 00 40 18 00 FF 00 00 00 00   ...`....@.......
+0010  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ................
+0020  00                                                .
+33-byte payload analysis:
+Raw bytes: 061b1c6000000000401800ff000000000000000000000000000000000000000000
+Zero bytes count: 26 out of 33
+
+Explicit decompress at offset 85 succeeded, length 16
+0000  02 00 0F 00 01 01 04 00 01 83 9F 00 01 12 9F 00   ................
+
+==== Processing fileg.tbt (size 109 bytes) ====
+Found 3 possible zlib header(s) at offsets: [4, 64, 85]
+Failed decompress at offset 4: Error -3 while decompressing data: invalid distance too far back
+Success decompressing at offset 64: length 33 bytes
+0000  06 1B 1C 60 00 00 00 00 40 18 00 FF 00 00 00 00   ...`....@.......
+0010  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ................
+0020  00                                                .
+
+Success decompressing at offset 85: length 16 bytes
+0000  02 00 0F 00 01 01 04 00 01 83 4F 00 01 12 EF 00   ..........O.....
+
+Explicit decompress at offset 64 succeeded, length 33
+0000  06 1B 1C 60 00 00 00 00 40 18 00 FF 00 00 00 00   ...`....@.......
+0010  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ................
+0020  00                                                .
+33-byte payload analysis:
+Raw bytes: 061b1c6000000000401800ff000000000000000000000000000000000000000000
+Zero bytes count: 26 out of 33
+
+Explicit decompress at offset 85 succeeded, length 16
+0000  02 00 0F 00 01 01 04 00 01 83 4F 00 01 12 EF 00   ..........O.....
+
+==== Processing fileh.tbt (size 111 bytes) ====
+Found 3 possible zlib header(s) at offsets: [4, 64, 85]
+Failed decompress at offset 4: Error -3 while decompressing data: invalid distance too far back
+Success decompressing at offset 64: length 33 bytes
+0000  06 1B 1C 60 00 00 00 00 40 18 00 FF 00 00 00 00   ...`....@.......
+0010  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ................
+0020  00                                                .
+
+Success decompressing at offset 85: length 18 bytes
+0000  02 00 0F 00 01 01 05 00 01 83 27 00 01 12 00 17   ..........'.....
+0010  01 00                                             ..
+
+Explicit decompress at offset 64 succeeded, length 33
+0000  06 1B 1C 60 00 00 00 00 40 18 00 FF 00 00 00 00   ...`....@.......
+0010  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ................
+0020  00                                                .
+33-byte payload analysis:
+Raw bytes: 061b1c6000000000401800ff000000000000000000000000000000000000000000
+Zero bytes count: 26 out of 33
+
+Explicit decompress at offset 85 succeeded, length 18
+0000  02 00 0F 00 01 01 05 00 01 83 27 00 01 12 00 17   ..........'.....
+0010  01 00                                             ..
+
+==== Processing filei.tbt (size 119 bytes) ====
+Found 3 possible zlib header(s) at offsets: [4, 64, 85]
+Failed decompress at offset 4: Error -3 while decompressing data: invalid distance too far back
+Success decompressing at offset 64: length 33 bytes
+0000  06 1B 1C 60 00 00 00 00 40 18 00 FF 00 00 00 00   ...`....@.......
+0010  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ................
+0020  00                                                .
+
+Success decompressing at offset 85: length 38 bytes
+0000  02 00 0F 00 01 01 0F 00 03 00 01 86 27 00 01 86   ............'...
+0010  27 00 01 86 27 00 01 89 28 00 01 87 27 00 01 8A   '...'...(...'...
+0020  4F 00 01 87 23 00                                 O...#.
+
+Explicit decompress at offset 64 succeeded, length 33
+0000  06 1B 1C 60 00 00 00 00 40 18 00 FF 00 00 00 00   ...`....@.......
+0010  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ................
+0020  00                                                .
+33-byte payload analysis:
+Raw bytes: 061b1c6000000000401800ff000000000000000000000000000000000000000000
+Zero bytes count: 26 out of 33
+
+Explicit decompress at offset 85 succeeded, length 38
+0000  02 00 0F 00 01 01 0F 00 03 00 01 86 27 00 01 86   ............'...
+0010  27 00 01 86 27 00 01 89 28 00 01 87 27 00 01 8A   '...'...(...'...
+0020  4F 00 01 87 23 00                                 O...#.
+38-byte payload parsed as 6-byte records:
+Record 01: [2, 0, 15, 0, 1, 1] | Hex: 02000f000101
+Record 02: [15, 0, 3, 0, 1, 134] | Hex: 0f0003000186
+Record 03: [39, 0, 1, 134, 39, 0] | Hex: 270001862700
+Record 04: [1, 134, 39, 0, 1, 137] | Hex: 018627000189
+Record 05: [40, 0, 1, 135, 39, 0] | Hex: 280001872700
+Record 06: [1, 138, 79, 0, 1, 135] | Hex: 018a4f000187
+
+
+==== Processing filei2.tbt (size 119 bytes) ====
+Found 2 possible zlib header(s) at offsets: [64, 85]
+Success decompressing at offset 64: length 33 bytes
+0000  06 1B 1C 60 00 00 00 00 40 18 00 FF 00 00 00 00   ...`....@.......
+0010  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ................
+0020  00                                                .
+
+Success decompressing at offset 85: length 38 bytes
+0000  02 00 0F 00 01 01 0F 00 03 00 01 86 27 00 01 86   ............'...
+0010  27 00 01 86 27 00 01 89 28 00 01 87 27 00 01 8A   '...'...(...'...
+0020  4F 00 01 87 23 00                                 O...#.
+
+Explicit decompress at offset 64 succeeded, length 33
+0000  06 1B 1C 60 00 00 00 00 40 18 00 FF 00 00 00 00   ...`....@.......
+0010  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ................
+0020  00                                                .
+33-byte payload analysis:
+Raw bytes: 061b1c6000000000401800ff000000000000000000000000000000000000000000
+Zero bytes count: 26 out of 33
+
+Explicit decompress at offset 85 succeeded, length 38
+0000  02 00 0F 00 01 01 0F 00 03 00 01 86 27 00 01 86   ............'...
+0010  27 00 01 86 27 00 01 89 28 00 01 87 27 00 01 8A   '...'...(...'...
+0020  4F 00 01 87 23 00                                 O...#.
+38-byte payload parsed as 6-byte records:
+Record 01: [2, 0, 15, 0, 1, 1] | Hex: 02000f000101
+Record 02: [15, 0, 3, 0, 1, 134] | Hex: 0f0003000186
+Record 03: [39, 0, 1, 134, 39, 0] | Hex: 270001862700
+Record 04: [1, 134, 39, 0, 1, 137] | Hex: 018627000189
+Record 05: [40, 0, 1, 135, 39, 0] | Hex: 280001872700
+Record 06: [1, 138, 79, 0, 1, 135] | Hex: 018a4f000187
+
+
+==== Processing filei3.tbt (size 119 bytes) ====
+Found 2 possible zlib header(s) at offsets: [64, 85]
+Success decompressing at offset 64: length 33 bytes
+0000  06 1B 1C 60 00 00 00 00 40 18 00 FF 00 00 00 00   ...`....@.......
+0010  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ................
+0020  00                                                .
+
+Success decompressing at offset 85: length 38 bytes
+0000  02 00 0F 00 01 01 0F 00 03 00 01 86 27 00 01 86   ............'...
+0010  27 00 01 86 27 00 01 89 28 00 01 87 27 00 01 8A   '...'...(...'...
+0020  4F 00 01 87 23 00                                 O...#.
+
+Explicit decompress at offset 64 succeeded, length 33
+0000  06 1B 1C 60 00 00 00 00 40 18 00 FF 00 00 00 00   ...`....@.......
+0010  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ................
+0020  00                                                .
+33-byte payload analysis:
+Raw bytes: 061b1c6000000000401800ff000000000000000000000000000000000000000000
+Zero bytes count: 26 out of 33
+
+Explicit decompress at offset 85 succeeded, length 38
+0000  02 00 0F 00 01 01 0F 00 03 00 01 86 27 00 01 86   ............'...
+0010  27 00 01 86 27 00 01 89 28 00 01 87 27 00 01 8A   '...'...(...'...
+0020  4F 00 01 87 23 00                                 O...#.
+38-byte payload parsed as 6-byte records:
+Record 01: [2, 0, 15, 0, 1, 1] | Hex: 02000f000101
+Record 02: [15, 0, 3, 0, 1, 134] | Hex: 0f0003000186
+Record 03: [39, 0, 1, 134, 39, 0] | Hex: 270001862700
+Record 04: [1, 134, 39, 0, 1, 137] | Hex: 018627000189
+Record 05: [40, 0, 1, 135, 39, 0] | Hex: 280001872700
+Record 06: [1, 138, 79, 0, 1, 135] | Hex: 018a4f000187
+
+
+==== Processing filei_guess.tbt (size 35 bytes) ====
+Found 0 possible zlib header(s) at offsets: []
+
+==== Processing file_e2.tbt (size 107 bytes) ====
+Found 3 possible zlib header(s) at offsets: [4, 64, 85]
+Failed decompress at offset 4: Error -3 while decompressing data: invalid distance too far back
+Success decompressing at offset 64: length 33 bytes
+0000  06 1B 1C 60 00 00 00 00 40 18 00 FF 00 00 00 00   ...`....@.......
+0010  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ................
+0020  00                                                .
+
+Success decompressing at offset 85: length 14 bytes
+0000  02 00 0F 00 01 01 03 00 01 83 00 3F 01 00         ...........?..
+
+Explicit decompress at offset 64 succeeded, length 33
+0000  06 1B 1C 60 00 00 00 00 40 18 00 FF 00 00 00 00   ...`....@.......
+0010  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ................
+0020  00                                                .
+33-byte payload analysis:
+Raw bytes: 061b1c6000000000401800ff000000000000000000000000000000000000000000
+Zero bytes count: 26 out of 33
+
+Explicit decompress at offset 85 succeeded, length 14
+0000  02 00 0F 00 01 01 03 00 01 83 00 3F 01 00         ...........?..
+
+==== Processing final_generated_filei.tbt (size 88 bytes) ====
+Found 2 possible zlib header(s) at offsets: [4, 16]
+Failed decompress at offset 4: Error -3 while decompressing data: invalid distance too far back
+Success decompressing at offset 16: length 0 bytes
+
+
+Explicit decompress at offset 64 failed: Error -3 while decompressing data: unknown compression method
+Explicit decompress at offset 85 failed: Error -3 while decompressing data: unknown compression method
+
+==== Processing fixed_generated_filei.tbt (size 119 bytes) ====
+Found 2 possible zlib header(s) at offsets: [4, 16]
+Failed decompress at offset 4: Error -3 while decompressing data: invalid distance too far back
+Success decompressing at offset 16: length 56 bytes
+0000  05 01 60 00 00 00 20 00 05 01 60 00 00 18 20 00   ..`... ...`... .
+0010  05 01 60 00 00 30 20 00 08 01 60 00 00 48 20 00   ..`..0 ...`..H .
+0020  0A 01 60 00 00 60 20 00 0D 01 60 00 00 78 20 00   ..`..` ...`..x .
+0030  0A 01 60 00 00 A8 20 00                           ..`... .
+
+Explicit decompress at offset 64 failed: Error -3 while decompressing data: unknown compression method
+Explicit decompress at offset 85 failed: Error -3 while decompressing data: unknown compression method
+
+==== Processing generated_filei.tbt (size 61 bytes) ====
+Found 2 possible zlib header(s) at offsets: [4, 29]
+Failed decompress at offset 4: Error -3 while decompressing data: invalid distance too far back
+Success decompressing at offset 29: length 28 bytes
+0000  62 60 3D 60 62 60 3D 60 62 60 3D 60 62 60 40 60   b`=`b`=`b`=`b`@`
+0010  62 60 42 60 62 60 45 60 62 60 42 60               b`B`b`E`b`B`
+
+
+==== Processing generated_filei_v2.tbt (size 119 bytes) ====
+Found 2 possible zlib header(s) at offsets: [4, 16]
+Failed decompress at offset 4: Error -3 while decompressing data: invalid distance too far back
+Success decompressing at offset 16: length 56 bytes
+0000  15 3D 00 60 00 3D 00 00 15 3D 00 60 00 3D 00 00   .=.`.=...=.`.=..
+0010  15 3D 00 60 00 3D 00 00 15 40 00 60 15 42 00 60   .=.`.=...@.`.B.`
+0020  00 42 00 00 15 45 00 60 00 45 00 00 15 42 00 60   .B...E.`.E...B.`
+0030  00 42 00 00 00 40 00 00                           .B...@..
+
+Explicit decompress at offset 64 failed: Error -3 while decompressing data: unknown compression method
+Explicit decompress at offset 85 failed: Error -3 while decompressing data: unknown compression method
+
+==== Processing generated_filei_v3.tbt (size 119 bytes) ====
+Found 2 possible zlib header(s) at offsets: [4, 16]
+Failed decompress at offset 4: Error -3 while decompressing data: invalid distance too far back
+Success decompressing at offset 16: length 56 bytes
+0000  94 01 00 60 00 00 20 00 94 01 00 60 20 00 20 00   ...`.. ....` . .
+0010  94 01 00 60 40 00 20 00 A0 01 00 60 60 00 20 00   ...`@. ....``. .
+0020  A8 01 00 60 80 00 20 00 B4 01 00 60 A0 00 40 00   ...`.. ....`..@.
+0030  A8 01 00 60 E0 00 10 00                           ...`....
+
+Explicit decompress at offset 64 failed: Error -3 while decompressing data: unknown compression method
+Explicit decompress at offset 85 failed: Error -3 while decompressing data: unknown compression method
+
+==== Processing patched_output.tbt (size 102 bytes) ====
+Found 2 possible zlib header(s) at offsets: [4, 64]
+Failed decompress at offset 4: Error -3 while decompressing data: invalid distance too far back
+Success decompressing at offset 64: length 56 bytes
+0000  00 00 3D 00 60 00 00 00 60 00 3D 00 60 00 00 00   ..=.`...`.=.`...
+0010  C0 00 3D 00 60 00 00 00 20 01 40 00 60 00 00 00   ..=.`... .@.`...
+0020  80 01 42 00 60 00 00 00 E0 01 45 00 60 00 00 00   ..B.`.....E.`...
+0030  A0 02 42 00 60 00 00 00                           ..B.`...
+
+Explicit decompress at offset 64 succeeded, length 56
+0000  00 00 3D 00 60 00 00 00 60 00 3D 00 60 00 00 00   ..=.`...`.=.`...
+0010  C0 00 3D 00 60 00 00 00 20 01 40 00 60 00 00 00   ..=.`... .@.`...
+0020  80 01 42 00 60 00 00 00 E0 01 45 00 60 00 00 00   ..B.`.....E.`...
+0030  A0 02 42 00 60 00 00 00                           ..B.`...
+Explicit decompress at offset 85 failed: Error -3 while decompressing data: incorrect header check
+
+==== Processing python_generated.tbt (size 42 bytes) ====
+Found 1 possible zlib header(s) at offsets: [4]
+Success decompressing at offset 4: length 56 bytes
+0000  00 00 3D 00 60 00 00 00 60 00 3D 00 60 00 00 00   ..=.`...`.=.`...
+0010  C0 00 3D 00 60 00 00 00 20 01 40 00 60 00 00 00   ..=.`... .@.`...
+0020  80 01 42 00 60 00 00 00 E0 01 45 00 60 00 00 00   ..B.`.....E.`...
+0030  A0 02 42 00 60 00 00 00                           ..B.`...
+
+
+==== Processing rebuild_60bpm.tbt (size 103 bytes) ====
+Found 1 possible zlib header(s) at offsets: [64]
+Success decompressing at offset 64: length 63 bytes
+0000  00 00 3D 00 60 00 00 00 00 30 00 3D 00 60 00 00   ..=.`....0.=.`..
+0010  00 00 60 00 3D 00 60 00 00 00 00 90 00 40 00 60   ..`.=.`......@.`
+0020  00 00 00 00 C0 00 42 00 60 00 00 00 00 F0 00 45   ......B.`......E
+0030  00 60 00 00 00 00 50 01 42 00 60 00 00 00 00      .`....P.B.`....
+
+Explicit decompress at offset 64 succeeded, length 63
+0000  00 00 3D 00 60 00 00 00 00 30 00 3D 00 60 00 00   ..=.`....0.=.`..
+0010  00 00 60 00 3D 00 60 00 00 00 00 90 00 40 00 60   ..`.=.`......@.`
+0020  00 00 00 00 C0 00 42 00 60 00 00 00 00 F0 00 45   ......B.`......E
+0030  00 60 00 00 00 00 50 01 42 00 60 00 00 00 00      .`....P.B.`....
+Explicit decompress at offset 85 failed: Error -3 while decompressing data: incorrect header check
+
+==== Processing tab2text.tbt (size 115 bytes) ====
+Found 3 possible zlib header(s) at offsets: [4, 64, 85]
+Failed decompress at offset 4: Error -3 while decompressing data: invalid distance too far back
+Success decompressing at offset 64: length 33 bytes
+0000  06 1B 1C 60 00 00 00 00 40 18 00 FF 00 00 00 00   ...`....@.......
+0010  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ................
+0020  00                                                .
+
+Success decompressing at offset 85: length 566 bytes
+0000  00 01 0F 00 01 01 0F 00 01 01 0F 00 01 01 0F 00   ................
+0010  01 01 0F 00 01 01 0F 00 01 01 0F 00 01 01 0F 00   ................
+0020  01 01 0F 00 01 01 0F 00 01 01 0F 00 01 01 0F 00   ................
+0030  01 01 0F 00 01 01 0F 00 01 01 0F 00 01 01 0F 00   ................
+0040  01 01 0F 00 01 01 0F 00 01 01 0F 00 01 01 0F 00   ................
+0050  01 01 0F 00 01 01 0F 00 01 01 0F 00 01 01 0F 00   ................
+0060  01 01 0F 00 01 01 0F 00 01 01 0F 00 01 01 0F 00   ................
+0070  01 01 0F 00 01 01 0F 00 01 01 0F 00 01 01 0F 00   ................
+0080  01 01 0F 00 01 01 0F 00 01 01 0F 00 01 01 0F 00   ................
+0090  01 01 0F 00 01 01 0F 00 01 01 0F 00 01 01 0F 00   ................
+00A0  01 01 0F 00 01 01 0F 00 01 01 0F 00 01 01 0F 00   ................
+00B0  01 01 0F 00 01 01 0F 00 01 01 0F 00 01 01 0F 00   ................
+00C0  01 01 0F 00 01 01 0F 00 01 01 0F 00 01 01 0F 00   ................
+00D0  01 01 0F 00 01 01 0F 00 01 01 0F 00 01 01 0F 00   ................
+00E0  01 01 0F 00 01 01 0F 00 01 01 0F 00 01 01 0F 00   ................
+00F0  01 01 0F 00 01 01 0F 00 01 01 0F 00 01 01 0F 00   ................
+0100  01 01 0F 00 01 01 0F 00 01 01 0F 00 01 01 0F 00   ................
+0110  01 01 0F 00 01 01 0F 00 01 01 0F 00 01 01 0F 00   ................
+0120  01 01 0F 00 01 01 0F 00 01 01 0F 00 01 01 0F 00   ................
+0130  01 01 0F 00 01 01 0F 00 01 01 0F 00 01 01 0F 00   ................
+0140  01 01 0F 00 01 01 0F 00 01 01 0F 00 01 01 0F 00   ................
+0150  01 01 0F 00 01 01 0F 00 01 01 0F 00 01 01 0F 00   ................
+0160  01 01 0F 00 01 01 0F 00 01 01 0F 00 01 01 0F 00   ................
+0170  01 01 0F 00 01 01 0F 00 01 01 0F 00 01 01 0F 00   ................
+0180  01 01 0F 00 01 01 0F 00 01 01 0F 00 01 01 0F 00   ................
+0190  01 01 0F 00 01 01 0F 00 01 01 0F 00 01 01 0F 00   ................
+01A0  01 01 0F 00 01 01 0F 00 01 01 0F 00 01 01 0F 00   ................
+01B0  01 01 0F 00 01 01 0F 00 01 01 0F 00 01 01 0F 00   ................
+01C0  01 01 0F 00 01 01 0F 00 01 01 0F 00 01 01 0F 00   ................
+01D0  01 01 0F 00 01 01 0F 00 01 01 0F 00 01 01 0F 00   ................
+01E0  01 01 0F 00 01 01 0F 00 01 01 0F 00 01 01 0F 00   ................
+01F0  01 01 0F 00 01 01 0F 00 01 01 0F 00 01 01 0F 00   ................
+0200  01 01 19 00 01 83 02 85 25 00 01 83 02 85 25 00   ........%.....%.
+0210  01 83 02 85 25 00 01 83 02 85 25 00 01 83 02 85   ....%.....%.....
+0220  25 00 01 83 02 85 25 00 01 83 02 85 25 00 01 83   %.....%.....%...
+0230  02 85 00 E5 9E 00                                 ......
+
+Explicit decompress at offset 64 succeeded, length 33
+0000  06 1B 1C 60 00 00 00 00 40 18 00 FF 00 00 00 00   ...`....@.......
+0010  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ................
+0020  00                                                .
+33-byte payload analysis:
+Raw bytes: 061b1c6000000000401800ff000000000000000000000000000000000000000000
+Zero bytes count: 26 out of 33
+
+Explicit decompress at offset 85 succeeded, length 566
+0000  00 01 0F 00 01 01 0F 00 01 01 0F 00 01 01 0F 00   ................
+0010  01 01 0F 00 01 01 0F 00 01 01 0F 00 01 01 0F 00   ................
+0020  01 01 0F 00 01 01 0F 00 01 01 0F 00 01 01 0F 00   ................
+0030  01 01 0F 00 01 01 0F 00 01 01 0F 00 01 01 0F 00   ................
+0040  01 01 0F 00 01 01 0F 00 01 01 0F 00 01 01 0F 00   ................
+0050  01 01 0F 00 01 01 0F 00 01 01 0F 00 01 01 0F 00   ................
+0060  01 01 0F 00 01 01 0F 00 01 01 0F 00 01 01 0F 00   ................
+0070  01 01 0F 00 01 01 0F 00 01 01 0F 00 01 01 0F 00   ................
+0080  01 01 0F 00 01 01 0F 00 01 01 0F 00 01 01 0F 00   ................
+0090  01 01 0F 00 01 01 0F 00 01 01 0F 00 01 01 0F 00   ................
+00A0  01 01 0F 00 01 01 0F 00 01 01 0F 00 01 01 0F 00   ................
+00B0  01 01 0F 00 01 01 0F 00 01 01 0F 00 01 01 0F 00   ................
+00C0  01 01 0F 00 01 01 0F 00 01 01 0F 00 01 01 0F 00   ................
+00D0  01 01 0F 00 01 01 0F 00 01 01 0F 00 01 01 0F 00   ................
+00E0  01 01 0F 00 01 01 0F 00 01 01 0F 00 01 01 0F 00   ................
+00F0  01 01 0F 00 01 01 0F 00 01 01 0F 00 01 01 0F 00   ................
+0100  01 01 0F 00 01 01 0F 00 01 01 0F 00 01 01 0F 00   ................
+0110  01 01 0F 00 01 01 0F 00 01 01 0F 00 01 01 0F 00   ................
+0120  01 01 0F 00 01 01 0F 00 01 01 0F 00 01 01 0F 00   ................
+0130  01 01 0F 00 01 01 0F 00 01 01 0F 00 01 01 0F 00   ................
+0140  01 01 0F 00 01 01 0F 00 01 01 0F 00 01 01 0F 00   ................
+0150  01 01 0F 00 01 01 0F 00 01 01 0F 00 01 01 0F 00   ................
+0160  01 01 0F 00 01 01 0F 00 01 01 0F 00 01 01 0F 00   ................
+0170  01 01 0F 00 01 01 0F 00 01 01 0F 00 01 01 0F 00   ................
+0180  01 01 0F 00 01 01 0F 00 01 01 0F 00 01 01 0F 00   ................
+0190  01 01 0F 00 01 01 0F 00 01 01 0F 00 01 01 0F 00   ................
+01A0  01 01 0F 00 01 01 0F 00 01 01 0F 00 01 01 0F 00   ................
+01B0  01 01 0F 00 01 01 0F 00 01 01 0F 00 01 01 0F 00   ................
+01C0  01 01 0F 00 01 01 0F 00 01 01 0F 00 01 01 0F 00   ................
+01D0  01 01 0F 00 01 01 0F 00 01 01 0F 00 01 01 0F 00   ................
+01E0  01 01 0F 00 01 01 0F 00 01 01 0F 00 01 01 0F 00   ................
+01F0  01 01 0F 00 01 01 0F 00 01 01 0F 00 01 01 0F 00   ................
+0200  01 01 19 00 01 83 02 85 25 00 01 83 02 85 25 00   ........%.....%.
+0210  01 83 02 85 25 00 01 83 02 85 25 00 01 83 02 85   ....%.....%.....
+0220  25 00 01 83 02 85 25 00 01 83 02 85 25 00 01 83   %.....%.....%...
+0230  02 85 00 E5 9E 00                                 ......
+
+==== Processing test.tbt (size 792 bytes) ====
+Found 0 possible zlib header(s) at offsets: []
+Explicit decompress at offset 64 failed: Error -3 while decompressing data: incorrect header check
+Explicit decompress at offset 85 failed: Error -3 while decompressing data: incorrect header check
+
+==== Processing test1track.tbt (size 476 bytes) ====
+Found 0 possible zlib header(s) at offsets: []
+Explicit decompress at offset 64 failed: Error -3 while decompressing data: incorrect header check
+Explicit decompress at offset 85 failed: Error -3 while decompressing data: incorrect header check
+=== Comparing 33-byte payloads (offset 64) ===
+Comparing payloads across files...
+Comparing filea.tbt to fileb.tbt:
+  Payloads are identical.
+Comparing fileb.tbt to filec.tbt:
+  Payloads are identical.
+Comparing filec.tbt to filed.tbt:
+  Payloads are identical.
+Comparing filed.tbt to filee.tbt:
+  Payloads are identical.
+Comparing filee.tbt to filef.tbt:
+  Payloads are identical.
+Comparing filef.tbt to fileg.tbt:
+  Payloads are identical.
+Comparing fileg.tbt to fileh.tbt:
+  Payloads are identical.
+Comparing fileh.tbt to filei.tbt:
+  Payloads are identical.
+Comparing filei.tbt to filei2.tbt:
+  Payloads are identical.
+Comparing filei2.tbt to filei3.tbt:
+  Payloads are identical.
+Comparing filei3.tbt to file_e2.tbt:
+  Payloads are identical.
+Comparing file_e2.tbt to tab2text.tbt:
+  Payloads are identical.
+
+=== Comparing 38-byte payloads (offset 85) ===
+Comparing payloads across files...
+Comparing filei.tbt to filei2.tbt:
+  Payloads are identical.
+Comparing filei2.tbt to filei3.tbt:
+  Payloads are identical.
+
+=== Offset detection and flag analysis is pending ===
+=== FORMAT INPUT ===
+If you have any format specs or example decompressed data formats,
+please paste them here (or leave empty to skip):
+Format info:
+No format info provided.
